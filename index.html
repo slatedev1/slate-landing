@@ -1,27 +1,89 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Slate Dental Ads</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <title>3 Google Ads Mistakes – Free Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="{{ get_public_template_url('SlateLandingPages/styles.css') }}">
 </head>
 <body>
-  <header class="navbar">
-    <div class="container">
-      <a href="https://www.slatedevgroup.com" class="logo-link">
-        <img src="logo.png" alt="Slate Development Logo" class="logo">
-      </a>
-    </div>
-  </header>
 
-<div class='hero'><h1>Turn Clicks Into New Dental Patients—Guaranteed</h1><p>We build and manage Google Ads campaigns that fill chairs—not just drive traffic.</p><a href='#audit' class='button'>Get My Free Google Ads Audit</a></div>
-<div class='section features'><h2>Why Dentists Choose Slate</h2><div class='feature-grid'><div class='feature'><h4>🛡️ HIPAA Compliant</h4><p>Protect patient data and stay compliant.</p></div><div class='feature'><h4>📈 Maximize ROI</h4><p>Better performance from every dollar spent.</p></div><div class='feature'><h4>📊 Advanced Tracking</h4><p>Know where your best leads come from.</p></div><div class='feature'><h4>🦷 Dentist-Focused</h4><p>Custom strategies just for dental practices.</p></div></div></div>
-<div class='section testimonial'><h2>What Our Clients Say</h2><blockquote>“Slate helped us reduce our cost per new patient by 48% with targeted campaigns that consistently generate quality leads.”<cite>— Dr. Sarah Johnson, Modern Smiles Dental</cite></blockquote></div>
-<div class='section form' id='audit'><h2>Request Your Free Google Ads Audit</h2><form><input type='text' placeholder='Full Name'><input type='email' placeholder='Email Address'><input type='url' placeholder='Practice Website'><select><option>Monthly Ad Budget</option><option>$500–$1,000</option><option>$1,000–$2,500</option><option>$2,500+</option></select><input type='text' placeholder='Main Services Offered'><button type='submit'>Send My Audit</button></form></div>
-<div class='section compare'><h2>How Slate Stacks Up</h2><table><tr><th>Features</th><th>Slate Dev Group</th><th>Other Agencies</th></tr><tr><td>Dental-Specific Strategy</td><td>✅</td><td>❌</td></tr><tr><td>HIPAA Compliance</td><td>✅</td><td>❌</td></tr><tr><td>No Long-Term Contracts</td><td>✅</td><td>❌</td></tr><tr><td>Conversion-Focused Pages</td><td>✅</td><td>❌</td></tr></table></div>
-<div class='faq'><h2>FAQs</h2><h4>Do I need a big ad budget?</h4><p>No. Many practices succeed starting at $500/month.</p><h4>How soon will I see results?</h4><p>Leads typically begin flowing within the first 2 weeks.</p><h4>Can you fix our existing Google Ads?</h4><p>Yes. We'll audit and improve your current setup or rebuild it better.</p></div>
-<div class='footer'><h2>Let’s Grow Your Dental Practice</h2><a href='#audit'>Claim Your Free Audit</a></div>
+<header class="navbar">
+  <a href="https://www.slatedevgroup.com">
+    <img src="logo.png" alt="Slate Development Group" class="logo">
+  </a>
+</header>
+
+<section class="hero">
+  <h1>The 3 Most Common Google Ads Mistakes Dentists Make</h1>
+  <p>Most dental campaigns miss these foundational flaws — and it costs them thousands. Grab our free visual guide to fix them today.</p>
+  <a href="#submit" class="btn">Show Me the Mistakes</a>
+</section>
+
+<section class="section">
+  <h2>What You’ll Learn</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Mistake #1: No Conversion‑Focused Page</h3>
+      <p>Sending clicks to generic pages kills results. We’ll show you how to fix it fast.</p>
+    </div>
+    <div class="card">
+      <h3>Mistake #2: Missing Lead‑Tracking Setup</h3>
+      <p>If you don’t know what works, you’re flying blind. Learn how to stop wasting budget.</p>
+    </div>
+    <div class="card">
+      <h3>Mistake #3: Misaligned Keywords & Bids</h3>
+      <p>Smart strategy beats brute force. Learn how to avoid the most common wasteful ad setups.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section pdf-preview">
+  <img src="pdf-preview.png" alt="Guide Preview">
+</section>
+
+<section class="section">
+  <div class="form-wrap" id="submit">
+    <h2>Get the Free Guide</h2>
+    <form>
+      <input type="text" name="firstname" placeholder="First Name" required />
+      <input type="text" name="practice" placeholder="Practice Name" />
+      <input type="tel" name="phone" placeholder="Phone Number" />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <select name="contact_method" required>
+        <option value="">Preferred Contact Method</option>
+        <option value="email">Email</option>
+        <option value="call">Call</option>
+        <option value="text">Text</option>
+      </select>
+      <label>
+        <input type="checkbox" name="running_ads" />
+        I’m currently running Google Ads
+      </label>
+      <button type="submit" class="btn">Send Me the Guide</button>
+    </form>
+    <p class="trust">🔒 100% private — No spam or cold calls.</p>
+  </div>
+</section>
+
+<div class="exit-intent" id="exitIntent">
+  <div class="popup">
+    <h3>Leaving Already?</h3>
+    <p>Grab the free guide before you go — you'll learn 3 easy fixes you can make today.</p>
+    <input type="email" name="exit_email" placeholder="Enter your email" />
+    <a href="#submit" class="btn-small">Send Me the Guide</a>
+    <p>We won’t call unless you ask us to.</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('mouseout', function(e) {
+    if (e.clientY < 10) {
+      document.getElementById('exitIntent').style.display = 'block';
+    }
+  });
+</script>
+
 </body>
 </html>
