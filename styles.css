@@ -269,3 +269,86 @@ form input, form select {
     max-width: 100%;
   }
 }
+
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216') center/cover no-repeat;
+  color: #fff;
+  padding: 100px 0;
+}
+.hero-overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 60px 20px;
+}
+.hero-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+}
+.hero-logo {
+  width: 140px;
+  margin-bottom: 30px;
+}
+.hero-left h1 {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.highlight {
+  color: #ffc107;
+}
+.subhead {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.hero-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+.form-card {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.form-card h3 {
+  margin-bottom: 20px;
+}
+.form-card input,
+.form-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-card .submit {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-card .submit:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left, .hero-form {
+    max-width: 100%;
+  }
+}
