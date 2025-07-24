@@ -186,3 +186,55 @@ button.btn {
 html {
   scroll-behavior: smooth;
 }
+
+.results-section {
+  padding: 60px 20px;
+  background: #f9fbfe;
+  text-align: center;
+}
+.testimonials blockquote {
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #333;
+}
+.results p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+.ads-graphic img {
+  width: 120px;
+  margin-top: 20px;
+}
+
+/* Enhanced form design */
+.form-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+form input, form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.subhead {
+  font-size: 18px;
+  color: #3a3a3a;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.trust-strip {
+  background: #fff;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.trust-strip .trust-msg {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
