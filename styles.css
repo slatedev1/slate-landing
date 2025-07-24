@@ -238,3 +238,34 @@ form input, form select {
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  text-align: left;
+  gap: 40px;
+}
+.hero-logo {
+  width: 160px;
+  margin-bottom: 30px;
+}
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text, .hero-image {
+    max-width: 100%;
+  }
+}
