@@ -1,0 +1,34 @@
+
+body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+h1, h2, h4, p, a, button, input, select, form { font-family: 'Inter', sans-serif; }
+.section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+
+.hero { background-color: #003459; color: white; text-align: center; padding: 80px 20px; }
+.hero h1 { font-size: 42px; margin-bottom: 20px; }
+.hero p { font-size: 18px; color: #ade8f4; margin-bottom: 30px; }
+.button { background: #00b4d8; color: #fff; padding: 14px 28px; border-radius: 6px; font-weight: bold; text-decoration: none; }
+
+.features { background-color: #e3f6fd; text-align: center; }
+.feature-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px; }
+.feature { background: #fff; border: 1px solid #cce9f2; border-radius: 10px; padding: 24px; width: 240px; }
+.feature h4 { color: #0077b6; }
+
+.testimonial { background-color: #f7f7f7; text-align: center; }
+.testimonial blockquote { font-style: italic; font-size: 18px; max-width: 800px; margin: auto; color: #333; }
+.testimonial cite { margin-top: 20px; display: block; font-weight: bold; color: #0077b6; }
+
+.form { background-color: #d0f0fc; text-align: center; }
+.form form { max-width: 500px; margin: auto; }
+.form input, .form select { width: 100%; padding: 14px; margin-bottom: 16px; font-size: 16px; border-radius: 6px; border: none; }
+.form button { background: #0077b6; color: white; padding: 14px 28px; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer; border: none; }
+
+.compare { background-color: #f5f5f5; text-align: center; }
+.compare table { width: 100%; max-width: 800px; margin: auto; border-collapse: collapse; }
+.compare th, .compare td { border: 1px solid #ccc; padding: 14px; }
+.compare th { background: #e0f7ff; }
+
+.faq { padding: 60px 20px; max-width: 800px; margin: auto; }
+.faq h4 { color: #0077b6; }
+
+.footer { background-color: #003459; color: white; text-align: center; padding: 60px 20px; }
+.footer a { background: #00b4d8; color: white; padding: 14px 28px; text-decoration: none; font-weight: bold; border-radius: 6px; }
