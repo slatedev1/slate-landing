@@ -1,86 +1,92 @@
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   background: #fff;
-  color: #111;
+  color: #222;
 }
-a { text-decoration: none; }
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
-.site-header {
+header {
   background: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-}
-.header-content {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
+  padding: 20px 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 .logo {
   height: 40px;
 }
 .hero {
-  background: #f3f8ff;
-  padding: 4rem 0;
+  background: #f1f7fe;
+  padding: 60px 0;
 }
 .hero-grid {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 .hero-text {
-  flex: 1;
+  flex: 1 1 45%;
 }
 .hero-text h1 {
-  font-size: 2.4rem;
-  color: #002855;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 .hero-text p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 20px;
 }
-.btn-primary {
-  background: #0077ff;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
+.cta-button {
+  padding: 12px 24px;
+  background: #0066ff;
+  color: white;
+  text-decoration: none;
   border-radius: 5px;
+}
+.hero-image {
+  flex: 1 1 45%;
+  text-align: right;
 }
 .hero-image img {
   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 .features {
-  background: #fff;
-  padding: 3rem 0;
-}
-.features-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.feature-card {
-  background: #f3f8ff;
-  padding: 1rem;
-  border-radius: 6px;
-  flex: 1 1 200px;
+  padding: 40px 0;
+  background: #fafafa;
   text-align: center;
 }
-.testimonial {
-  padding: 3rem 0;
-  background: #f9f9f9;
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
-.testimonial-box {
-  background: #fff;
-  padding: 2rem;
-  border-left: 4px solid #0077ff;
+.card {
+  background: #eef4ff;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  min-width: 250px;
+}
+.testimonials {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+blockquote {
   font-style: italic;
-  border-radius: 5px;
+  color: #444;
+  border-left: 4px solid #0066ff;
+  padding-left: 16px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #999;
 }
