@@ -3,87 +3,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>3 Google Ads Mistakes – Free Guide</title>
+  <title>Slate Google Ads Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header class="navbar">
   <a href="https://www.slatedevgroup.com">
-    <img src="logo.png" alt="Slate Development Group" class="logo">
+    <img src="logo.png" alt="Slate Development Group Logo" class="logo" />
   </a>
 </header>
 
 <section class="hero">
   <h1>The 3 Most Common Google Ads Mistakes Dentists Make</h1>
-  <p>Most dental campaigns miss these foundational flaws — and it costs them thousands. Grab our free visual guide to fix them today.</p>
-  <a href="#submit" class="btn">Show Me the Mistakes</a>
+  <p>Most dental practices miss these simple fixes. Download the guide and stop wasting ad budget.</p>
+  <a href="#form" class="btn">Get the Free Guide</a>
 </section>
 
-<section class="section">
-  <h2>What You’ll Learn</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Mistake #1: No Conversion‑Focused Page</h3>
-      <p>Sending clicks to generic pages kills results. We’ll show you how to fix it fast.</p>
-    </div>
-    <div class="card">
-      <h3>Mistake #2: Missing Lead‑Tracking Setup</h3>
-      <p>If you don’t know what works, you’re flying blind. Learn how to stop wasting budget.</p>
-    </div>
-    <div class="card">
-      <h3>Mistake #3: Misaligned Keywords & Bids</h3>
-      <p>Smart strategy beats brute force. Learn how to avoid the most common wasteful ad setups.</p>
-    </div>
+<section class="features">
+  <div class="feature">
+    <h2>No Landing Page Strategy</h2>
+    <p>Sending ad clicks to your homepage? Learn why that doesn’t work—and what to do instead.</p>
+  </div>
+  <div class="feature">
+    <h2>Missing Lead Tracking</h2>
+    <p>Stop guessing which ads bring in patients. Discover how to track and optimize ROI.</p>
+  </div>
+  <div class="feature">
+    <h2>Keyword Waste</h2>
+    <p>Cut out expensive keywords that don’t convert. We’ll show you which ones to watch for.</p>
   </div>
 </section>
 
-<section class="section pdf-preview">
-  <img src="pdf-preview.png" alt="Guide Preview">
+<section class="form-section" id="form">
+  <h2>Download Your Free Guide</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Email Address" required />
+    <input type="tel" name="phone" placeholder="Phone Number (optional)" />
+    <select name="contact_preference">
+      <option value="">Preferred Contact Method</option>
+      <option value="email">Email</option>
+      <option value="call">Call</option>
+      <option value="text">Text</option>
+    </select>
+    <button type="submit" class="btn">Send Me the Guide</button>
+  </form>
+  <p class="privacy">No spam. No cold calls. Just value.</p>
 </section>
-
-<section class="section">
-  <div class="form-wrap" id="submit">
-    <h2>Get the Free Guide</h2>
-    <form>
-      <input type="text" name="firstname" placeholder="First Name" required />
-      <input type="text" name="practice" placeholder="Practice Name" />
-      <input type="tel" name="phone" placeholder="Phone Number" />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <select name="contact_method" required>
-        <option value="">Preferred Contact Method</option>
-        <option value="email">Email</option>
-        <option value="call">Call</option>
-        <option value="text">Text</option>
-      </select>
-      <label>
-        <input type="checkbox" name="running_ads" />
-        I’m currently running Google Ads
-      </label>
-      <button type="submit" class="btn">Send Me the Guide</button>
-    </form>
-    <p class="trust">🔒 100% private — No spam or cold calls.</p>
-  </div>
-</section>
-
-<div class="exit-intent" id="exitIntent">
-  <div class="popup">
-    <h3>Leaving Already?</h3>
-    <p>Grab the free guide before you go — you'll learn 3 easy fixes you can make today.</p>
-    <input type="email" name="exit_email" placeholder="Enter your email" />
-    <a href="#submit" class="btn-small">Send Me the Guide</a>
-    <p>We won’t call unless you ask us to.</p>
-  </div>
-</div>
-
-<script>
-  document.addEventListener('mouseout', function(e) {
-    if (e.clientY < 10) {
-      document.getElementById('exitIntent').style.display = 'block';
-    }
-  });
-</script>
 
 </body>
 </html>
