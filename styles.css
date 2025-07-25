@@ -1,92 +1,52 @@
 
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #fff;
-  color: #222;
-}
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-header {
-  background: #fff;
-  padding: 20px 0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-.logo {
-  height: 40px;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff;
+    color: #1d1d1d;
 }
 .hero {
-  background: #f1f7fe;
-  padding: 60px 0;
+    display: flex;
+    padding: 3rem;
+    background-color: #f0f8ff;
+    justify-content: space-between;
 }
-.hero-grid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero-text {
-  flex: 1 1 45%;
-}
-.hero-text h1 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-.hero-text p {
-  margin-bottom: 20px;
-}
-.cta-button {
-  padding: 12px 24px;
-  background: #0066ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-.hero-image {
-  flex: 1 1 45%;
-  text-align: right;
+.hero-content {
+    max-width: 50%;
 }
 .hero-image img {
-  max-width: 100%;
+    width: 100%;
+    max-width: 500px;
 }
-.features {
-  padding: 40px 0;
-  background: #fafafa;
-  text-align: center;
+.form input, .form select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
 }
-.feature-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
+button {
+    padding: 10px 20px;
+    background-color: #0057ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.features, .testimonials, .results {
+    padding: 3rem;
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 .card {
-  background: #eef4ff;
-  padding: 20px;
-  border-radius: 8px;
-  font-weight: 500;
-  min-width: 250px;
-}
-.testimonials {
-  padding: 40px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
-blockquote {
-  font-style: italic;
-  color: #444;
-  border-left: 4px solid #0066ff;
-  padding-left: 16px;
-  margin: 20px auto;
-  max-width: 600px;
+    background: #eef6ff;
+    padding: 1rem;
+    border-radius: 8px;
 }
 footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9em;
-  color: #999;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f8f8;
 }
