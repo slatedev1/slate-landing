@@ -1,81 +1,62 @@
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background-color: #f7faff;
-    color: #1a1a1a;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9faff;
+}
+.hero, .features, .testimonials, .learning-points, .before-after, .cta-footer {
+  padding: 2rem;
+  text-align: center;
 }
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #eef5fd, #ffffff);
-    padding: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eef5fd;
 }
-.hero-text {
-    max-width: 50%;
+.hero-image img, .testimonials img, .learning-points img, .before-after img, .cta-footer img {
+  max-width: 100%;
+  border-radius: 8px;
 }
-.hero h1 {
-    font-size: 2em;
-    color: #123456;
+.form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.cta-form {
-    background: #fff;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.form input, .form select, .form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
 }
-.cta-form input, .cta-form select, .cta-form button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-.cta-form button {
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    border: none;
-}
-.features {
-    padding: 2em;
-    background-color: #fff;
-    text-align: center;
+.form button, .cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .feature-grid {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 .feature-card {
-    background-color: #eef2f7;
-    padding: 1em;
-    border-radius: 6px;
-}
-.testimonials {
-    background-color: #f9f9f9;
-    padding: 2em;
-    text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  width: 220px;
 }
 blockquote {
-    font-style: italic;
+  font-style: italic;
+  margin-top: 1rem;
 }
-.learning-points {
-    padding: 2em;
-    background-color: #fff;
-}
-.learning-points ul {
-    list-style: none;
-    padding: 0;
-}
-.learning-points li {
-    margin-bottom: 0.5em;
-}
-.footer {
-    background-color: #f0f0f0;
-    text-align: center;
-    padding: 1em;
+footer {
+  background-color: #f1f1f1;
+  padding: 1rem;
 }
