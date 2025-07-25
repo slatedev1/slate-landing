@@ -1,62 +1,40 @@
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9faff;
-}
-.hero, .features, .testimonials, .learning-points, .before-after, .cta-footer {
-  padding: 2rem;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8fbff;
+    color: #333;
 }
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #eef5fd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(to right, #f0f7ff, #ffffff);
 }
-.hero-image img, .testimonials img, .learning-points img, .before-after img, .cta-footer img {
-  max-width: 100%;
-  border-radius: 8px;
+.hero-text {
+    max-width: 50%;
 }
-.form {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+.hero-form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
-.form input, .form select, .form button {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
+section {
+    padding: 60px;
+    text-align: center;
 }
-.form button, .cta-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.feature-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+.feature {
+    width: 200px;
+    margin: 20px;
 }
-.feature-card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
-  width: 220px;
-}
-blockquote {
-  font-style: italic;
-  margin-top: 1rem;
-}
-footer {
-  background-color: #f1f1f1;
-  padding: 1rem;
+img {
+    max-width: 100%;
 }
