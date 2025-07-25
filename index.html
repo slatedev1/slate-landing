@@ -2,55 +2,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Slate Google Ads Guide</title>
-    <link href="styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slate Landing Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f9ff;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem;
+            background: linear-gradient(to right, #e9f1fb, #ffffff);
+        }
+        .hero-text {
+            max-width: 500px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #11385b;
+        }
+        .hero p {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+        .form-container input, .form-container select, .form-container button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
+    <div class="hero">
+        <div class="hero-text">
             <h1>The 3 Most Common Google Ads Mistakes We See in Dental Campaigns</h1>
             <p>Learn what’s holding your campaigns back — and how to fix them fast.</p>
-            <form class="form">
-                <input type="text" placeholder="Your Name" required/>
-                <input type="email" placeholder="Email Address" required/>
-                <input type="tel" placeholder="Phone Number" />
+        </div>
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
                 <select required>
-                    <option value="">Preferred Contact Method</option>
+                    <option disabled selected>Preferred Contact Method</option>
                     <option>Email</option>
                     <option>Phone</option>
+                    <option>Text</option>
                 </select>
                 <button type="submit">Show Me the Mistakes</button>
             </form>
         </div>
-        <div class="hero-image">
-            <img src="hero.png" alt="Hero Illustration"/>
-        </div>
-    </header>
-
-    <section class="features">
-        <h2>Why Slate?</h2>
-        <div class="card-container">
-            <div class="card">🚀 Growth Tracking</div>
-            <div class="card">🔒 HIPAA-Compliant</div>
-            <div class="card">⭐ Patient-Converting Ads</div>
-            <div class="card">💼 Dental Ad Experts</div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <h2>What Other Dentists Say</h2>
-        <p>🦷 "Slate helped us cut costs and increase new patient leads in just 3 weeks."</p>
-    </section>
-
-    <section class="results">
-        <h2>See Real Results</h2>
-        <img src="results-chart.png" alt="Before/After Chart"/>
-    </section>
-
-    <footer>
-        <p>© 2025 Slate Development Group</p>
-    </footer>
+    </div>
 </body>
 </html>
