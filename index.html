@@ -2,47 +2,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Slate Landing Page</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Patients, More Revenue - Slate Development Group</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="hero">
-        <div class="hero-text">
-            <h1>The 3 Most Common Google Ads Mistakes We See in Dental Campaigns</h1>
-            <p>Learn what’s holding your campaigns back — and how to fix them fast.</p>
-        </div>
-        <div class="hero-form">
-            <form>
-                <input type="text" placeholder="Your Name"/><br/><br/>
-                <input type="email" placeholder="Email Address"/><br/><br/>
-                <input type="text" placeholder="Phone Number"/><br/><br/>
-                <select><option>Preferred Contact Method</option></select><br/><br/>
-                <button type="submit">Show Me the Mistakes</button>
-            </form>
-        </div>
-    </section>
+  <header>
+    <div class="logo">Slate Development Group</div>
+  </header>
 
-    <section>
-        <h2>Why Dental Practices Choose Slate</h2>
-        <div class="features">
-            <div class="feature"><img src="ChatGPT Image Jul 24, 2025, 11_58_52 PM.png" alt="Growth Tracking"/><p>Growth Tracking</p></div>
-            <div class="feature"><img src="ChatGPT Image Jul 24, 2025, 11_58_54 PM.png" alt="HIPAA Compliant"/><p>HIPAA Compliant</p></div>
-            <div class="feature"><img src="ChatGPT Image Jul 24, 2025, 11_58_56 PM.png" alt="Patient-Converting Ads"/><p>Patient-Converting Ads</p></div>
-            <div class="feature"><img src="ChatGPT Image Jul 24, 2025, 11_58_58 PM.png" alt="Dental Ad Experts"/><p>Dental Ad Experts</p></div>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-image" style="background-image: url('https://via.placeholder.com/1200x600?text=Dental+Team+with+Google+Ad+Overlay');"></div>
+    <div class="hero-content">
+      <h1>Fill Your Dental Chairs with a Free Google Ads Checkup</h1>
+      <p>Slate Development Group understands your challenges—let’s find hidden opportunities to grow your practice.</p>
+      <form id="checkupForm" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="practiceName" placeholder="Practice Name" required>
+        <button type="submit">Show Me How to Get More Patients</button>
+      </form>
+    </div>
+  </section>
 
-    <section>
-        <h2>What Clients Are Saying</h2>
-        <img src="ChatGPT Image Jul 25, 2025, 12_32_13 AM.png" alt="Testimonial from Dr. Emily Carter"/>
-    </section>
+  <section class="trust-icons">
+    <div class="icon-item">
+      <div class="icon" style="background-image: url('https://via.placeholder.com/100?text=Patient+Growth+Icon');"></div>
+      <p>Get More Patients Booking</p>
+    </div>
+    <div class="icon-item">
+      <div class="icon" style="background-image: url('https://via.placeholder.com/100?text=HIPAA+Shield');"></div>
+      <p>Keep Patient Data Safe</p>
+    </div>
+    <div class="icon-item">
+      <div class="icon" style="background-image: url('https://via.placeholder.com/100?text=Easy+Fixes+Icon');"></div>
+      <p>Find What’s Holding You Back</p>
+    </div>
+  </section>
 
-    <section>
-        <h2>What You'll Learn</h2>
-        <img src="ChatGPT Image Jul 25, 2025, 12_02_53 AM.png" alt="Slide Deck Mistakes Graphic"/>
-        <img src="ChatGPT Image Jul 25, 2025, 12_32_09 AM.png" alt="Slide Deck Fixes Graphic"/>
-    </section>
+  <section class="ads-features">
+    <h2>Strong Google Ads Campaigns That Deliver</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon" style="background-image: url('https://via.placeholder.com/100?text=Local+Patients+Map');"></div>
+        <h3>Attract More Local Patients</h3>
+        <p>Reach patients searching for “dentist near me” with ads tailored to your area, driving more appointments.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" style="background-image: url('https://via.placeholder.com/100?text=Revenue+Chart');"></div>
+        <h3>Turn Clicks into Revenue</h3>
+        <p>Maximize your budget with campaigns that focus on high-intent keywords, turning clicks into revenue.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon" style="background-image: url('https://via.placeholder.com/100?text=Optimization+Gear');"></div>
+        <h3>Keep Your Schedule Full</h3>
+        <p>We adjust your ads daily to ensure they perform at their best, keeping your practice busy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="success-story">
+    <h2>Success Story: From 30 to Over 500 Conversions</h2>
+    <div class="story-card">
+      <div class="story-image" style="background-image: url('https://via.placeholder.com/300x200?text=Conversion+Graph');"></div>
+      <div class="story-content">
+        <p>One dental office struggled with just 30 conversions a month. After partnering with Slate Development Group, we launched a targeted Google Ads campaign focusing on local searches and high-intent keywords. Within three months, their conversions soared to over 500 a month, filling their schedule and boosting revenue significantly!</p>
+        <p><a href="#checkupForm" class="cta-link">Start Your Transformation Today</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-trust">
+      <div class="shield-icon" style="background-image: url('https://via.placeholder.com/50?text=HIPAA+Shield');"></div>
+      <a href="https://www.slatedevgroup.com/privacy-policy">Privacy Policy</a>
+      <p>Helping 100+ Dentists Thrive</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
