@@ -2,85 +2,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>More Patients, More Revenue - Slate Development Group</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slate Development Group - Dental Ads Checkup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Slate Development Group</div>
-  </header>
+    <header class="site-header">
+        <div class="logo">Slate Development Group</div>
+    </header>
 
-  <section class="hero">
-    <div class="hero-image" style="background-image: url('https://via.placeholder.com/1200x600?text=Dental+Team+with+Google+Ad+Overlay');"></div>
-    <div class="hero-content">
-      <h1>Fill Your Dental Chairs with a Free Google Ads Checkup</h1>
-      <p>Slate Development Group understands your challenges—let’s find hidden opportunities to grow your practice.</p>
-      <form id="checkupForm" onsubmit="handleSubmit(event)">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="text" name="practiceName" placeholder="Practice Name" required>
-        <button type="submit">Show Me How to Get More Patients</button>
-      </form>
-    </div>
-  </section>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Fill Your Dental Chairs with a Free Google Ads Checkup</h1>
+                <p>Slate Development Group understands your challenges—let’s find hidden opportunities to grow your practice.</p>
+                <form class="hero-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Practice Name" required>
+                    <button type="submit">Show Me How to Get More Patients</button>
+                </form>
+            </div>
+            <div class="hero-image">[Hero Image Placeholder]</div>
+        </div>
+    </section>
 
-  <section class="trust-icons">
-    <div class="icon-item">
-      <div class="icon" style="background-image: url('https://via.placeholder.com/100?text=Patient+Growth+Icon');"></div>
-      <p>Get More Patients Booking</p>
-    </div>
-    <div class="icon-item">
-      <div class="icon" style="background-image: url('https://via.placeholder.com/100?text=HIPAA+Shield');"></div>
-      <p>Keep Patient Data Safe</p>
-    </div>
-    <div class="icon-item">
-      <div class="icon" style="background-image: url('https://via.placeholder.com/100?text=Easy+Fixes+Icon');"></div>
-      <p>Find What’s Holding You Back</p>
-    </div>
-  </section>
+    <section class="trust-icons">
+        <div class="icon">
+            <div>[Icon: Dental chair + arrow]</div>
+            <p>Get More Patients Booking</p>
+        </div>
+        <div class="icon">
+            <div>[Icon: HIPAA Shield]</div>
+            <p>Keep Patient Data Safe</p>
+        </div>
+        <div class="icon">
+            <div>[Icon: Magnifying Glass]</div>
+            <p>Find What’s Holding You Back</p>
+        </div>
+    </section>
 
-  <section class="ads-features">
-    <h2>Strong Google Ads Campaigns That Deliver</h2>
-    <div class="features-grid">
-      <div class="feature-item">
-        <div class="feature-icon" style="background-image: url('https://via.placeholder.com/100?text=Local+Patients+Map');"></div>
-        <h3>Attract More Local Patients</h3>
-        <p>Reach patients searching for “dentist near me” with ads tailored to your area, driving more appointments.</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon" style="background-image: url('https://via.placeholder.com/100?text=Revenue+Chart');"></div>
-        <h3>Turn Clicks into Revenue</h3>
-        <p>Maximize your budget with campaigns that focus on high-intent keywords, turning clicks into revenue.</p>
-      </div>
-      <div class="feature-item">
-        <div class="feature-icon" style="background-image: url('https://via.placeholder.com/100?text=Optimization+Gear');"></div>
-        <h3>Keep Your Schedule Full</h3>
-        <p>We adjust your ads daily to ensure they perform at their best, keeping your practice busy.</p>
-      </div>
-    </div>
-  </section>
+    <section class="testimonial">
+        <div class="testimonial-card">
+            <blockquote>“Slate’s ads brought in 20 new patients a month!”</blockquote>
+            <p>- Happy Dentist</p>
+            <div class="stars">★★★★★</div>
+            <p class="trusted">Trusted by Dentists</p>
+        </div>
+    </section>
 
-  <section class="success-story">
-    <h2>Success Story: From 30 to Over 500 Conversions</h2>
-    <div class="story-card">
-      <div class="story-image" style="background-image: url('https://via.placeholder.com/300x200?text=Conversion+Graph');"></div>
-      <div class="story-content">
-        <p>One dental office struggled with just 30 conversions a month. After partnering with Slate Development Group, we launched a targeted Google Ads campaign focusing on local searches and high-intent keywords. Within three months, their conversions soared to over 500 a month, filling their schedule and boosting revenue significantly!</p>
-        <p><a href="#checkupForm" class="cta-link">Start Your Transformation Today</a></p>
-      </div>
-    </div>
-  </section>
+    <section class="form-secondary">
+        <div class="form-box">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Practice Name" required>
+            <button type="submit">Show Me How to Get More Patients</button>
+            <small><span class="lock-icon">🔒</span> Secure Form Submission</small>
+        </div>
+    </section>
 
-  <footer>
-    <div class="footer-trust">
-      <div class="shield-icon" style="background-image: url('https://via.placeholder.com/50?text=HIPAA+Shield');"></div>
-      <a href="https://www.slatedevgroup.com/privacy-policy">Privacy Policy</a>
-      <p>Helping 100+ Dentists Thrive</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer class="footer-bar">
+        <div class="footer-content">
+            <span>[Shield Icon]</span>
+            <a href="https://www.slatedevgroup.com/privacy-policy">Privacy Policy</a>
+            <p>Helping 100+ Dentists Thrive</p>
+        </div>
+    </footer>
 </body>
 </html>
