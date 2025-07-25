@@ -1,71 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Slate Google Ads Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slate Google Ads Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="assets/slate-logo.png" alt="Slate Logo" class="logo">
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>3 Costly Google Ads Mistakes We See in Dental Campaigns</h1>
-            <p>Get our free slide deck showing what most dental campaigns get wrong—and how to fix it.</p>
-            <a href="#form" class="cta-button">Show Me the Mistakes</a>
-        </div>
-        <div class="hero-image">
-            <img src="assets/hero-graphic.png" alt="Google Ads Visual">
-        </div>
-    </section>
-
-    <section class="features">
-        <h2>Why Dental Practices Choose Slate</h2>
-        <div class="feature-cards">
-            <div class="card">💬 98% client satisfaction</div>
-            <div class="card">📈 43% average increase in new patients</div>
-            <div class="card">🔒 HIPAA-compliant, ROI-driven approach</div>
-            <div class="card">🦷 Trusted by 1000+ practices</div>
-        </div>
-    </section>
-
-    <section class="testimonial">
-        <h2>What Clients Are Saying</h2>
-        <blockquote>
-            “Our practice has seen a significant increase in new patients since working with Slate.”
-            <footer>— Dr. Emily Carter</footer>
-        </blockquote>
-    </section>
-
-    <section class="service-highlights">
-        <h2>What You’ll Learn in the Free Slide Deck</h2>
-        <ul>
-            <li>⚠️ The biggest mistake most dental practices make when setting up Google Ads</li>
-            <li>💡 How to fix wasted ad spend and capture high-intent patients</li>
-            <li>📊 What winning campaigns actually look like</li>
-        </ul>
-    </section>
-
-    <section class="form-section" id="form">
-        <h2>Grab the Free Slide Deck</h2>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="tel" placeholder="Phone Number">
-            <select>
-                <option value="">Preferred Contact Method</option>
-                <option value="email">Email</option>
-                <option value="call">Call</option>
-                <option value="text">Text</option>
-            </select>
-            <button type="submit">Send Me the Fixes</button>
+  <header>
+    <div class="container header-container">
+      <img src="logo.png" alt="Slate Logo" class="logo" onclick="window.location.href='https://www.slatedevgroup.com'">
+      <div class="hero-content">
+        <h1>The 3 Most Common Google Ads Mistakes We See in Dental Campaigns</h1>
+        <p>Learn what’s holding your campaigns back — and how to fix them fast.</p>
+        <form class="lead-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="tel" placeholder="Phone Number" />
+          <select>
+            <option selected>Preferred Contact Method</option>
+            <option>Email</option>
+            <option>Call</option>
+            <option>Text</option>
+          </select>
+          <button type="submit">Show Me the Mistakes</button>
         </form>
-    </section>
+      </div>
+      <img src="HERO_PLACEHOLDER.jpg" alt="Hero Illustration" class="hero-image" />
+    </div>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 Slate Development Group</p>
-    </footer>
+  <section class="features">
+    <h2>Why Slate?</h2>
+    <div class="feature-cards">
+      <div class="card">🚀 Growth Tracking</div>
+      <div class="card">🔒 HIPAA-Compliant</div>
+      <div class="card">⭐ Patient-Converting Ads</div>
+      <div class="card">💼 Dental Ad Experts</div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Other Dentists Say</h2>
+    <div class="testimonial-block">
+      <img src="TESTIMONIAL_PLACEHOLDER.jpg" alt="Client Avatar" />
+      <blockquote>"Slate helped us cut costs and increase new patient leads in just 3 weeks."</blockquote>
+    </div>
+  </section>
+
+  <section class="results">
+    <h2>See Real Results</h2>
+    <img src="RESULTS_PLACEHOLDER.jpg" alt="Before/After Chart" />
+  </section>
+
+  <section class="final-cta">
+    <h2>Get the Free Guide</h2>
+    <p>Start fixing your dental ads today with this easy 3-step PDF.</p>
+    <img src="PDF_DELIVERY_PLACEHOLDER.jpg" alt="PDF Email Delivery Visual" />
+    <button onclick="document.querySelector('.lead-form').scrollIntoView({ behavior: 'smooth' });">
+      Claim Your Copy
+    </button>
+  </section>
 </body>
 </html>
